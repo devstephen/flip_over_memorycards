@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome link goes here  -->
+    <title>Memory Cards</title>
+  </head>
+  <body>
+    <button class="clear btn" id="clear">🚮 Clear Cards</button>
+    <h1
+      >Memory Cards
+      <button id="show" class="btn btn-small">➕ Add new card</button>
+    </h1>
+
+    <div id="cards-container" class="cards">
+      <!-- <div class="card active">
+        <div class="inner-card">
+          <div class="inner-card-front">
+            <p>What is PHP</p>
+          </div>
+          <div class="inner-card-back">
+            <p> Programming Language</p>
+          </div>
+        </div> -->
+      </div>
+      <!-- <div class="card">
+        <div class="inner-card">
+          <div class="inner-card-front">
+            <p>What is JAVA</p>
+          </div>
+          <div class="inner-card-back">
+            <p>A Programming Language</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <div class="navigation">
+      <button id="prev" class="nav-button">⬅</button>
+      <p id="current"></p>
+      <button id="next" class="nav-button">➡</button>
+    </div>
+
+    <div class="add-container" id="add-container">
+      <h1
+        >Add New Card
+        <button id="hide" class="btn btn-small btn-ghost">✖</button>
+      </h1>
+
+      <div class="form-group">
+        <label for="question">Question</label>
+        <textarea id="question" placeholder="Enter question..."></textarea>
+        <label for="answer">Answer</label>
+        <textarea id="answer" placeholder="Answer..."></textarea>
+        <button id="add-card" class="btn">➕ Add Card</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
